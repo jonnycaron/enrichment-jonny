@@ -4,16 +4,29 @@
         <link(rel="stylesheet", type="text/css", href="main.css")>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/login.css">
-	</head>
+	<script>
+		function goForit() {
+ 			var passwd;
+  			passwd = document.getElementById('Password').value;
+  			if(passwd=="123"){
+  			window.open ('idex.html','_self',false)
+ 			 }
+  			else{
+  			alert('Password wrong');
+  			}
+		      }
+		</script>
+		
+		</head>
     <body>
         
         <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" action="index.html">
+			<form class="login" action="index.html" onsubmit="goForit()">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="User name / Email">
+					<input type="email" class="login__input" placeholder="User name / Email">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
