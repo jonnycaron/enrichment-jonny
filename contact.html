@@ -204,6 +204,12 @@
              });
          }
       </script>
+      <script>
+            if( $.cookie('cookiename') == null ) { 
+            alert("Nice try mate");
+          window.location.replace('https://jonnycaron.github.io/enrichment-jonny/login.html');
+         }
+      </script>
       <!-- google map js -->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
       <!-- end google map js -->
